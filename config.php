@@ -17,7 +17,7 @@ $CFG->dboptions = array (
   'dbsocket' => '',
 );
 
-$CFG->wwwroot   = getenv('WWWROOT');
+$CFG->wwwroot   = 'http://emo-moodle.herokuapp.com/';
 $CFG->dataroot  = getenv('DATAROOT');
 $CFG->admin     = 'admin';
 
