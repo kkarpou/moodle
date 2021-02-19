@@ -4,12 +4,12 @@ unset($CFG);
 global $CFG;
 $CFG = new stdClass();
 
-$CFG->dbtype    = getenv('DATABASE_TYPE');
+$CFG->dbtype    = 'pgsql';
 $CFG->dblibrary = 'native';
-$CFG->dbhost    = getenv('DATABASE_HOST');
-$CFG->dbname    = getenv('DATABASE_NAME');
-$CFG->dbuser    = getenv('DATABASE_USER');
-$CFG->dbpass    = getenv('DATABASE_PASSWORD');
+$CFG->dbhost    = 'ec2-54-228-174-49.eu-west-1.compute.amazonaws.com:5432';
+$CFG->dbname    = 'd4akcsecpetfh2';
+$CFG->dbuser    = 'icfojyisuftvxb';
+$CFG->dbpass    = 'bd1d6edaf4c2e409171ae66e36c9bb862964615f01247fd67e390fcc7e85122a';
 $CFG->prefix    = 'mdl_';
 $CFG->dboptions = array (
   'dbpersist' => 0,
